@@ -1,7 +1,7 @@
 package com.amirkenesbay.spring.rest.entity;
 
 public class Department {
-    private Integer id;
+    private int id;
     private String name;
     private Integer maxSalary;
     private Integer minSalary;
@@ -15,11 +15,11 @@ public class Department {
         this.minSalary = minSalary;
     }
 
-    public Integer getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(int id) {
         this.id = id;
     }
 
@@ -45,5 +45,15 @@ public class Department {
 
     public void setMinSalary(Integer minSalary) {
         this.minSalary = minSalary;
+    }
+
+    @Override
+    public String toString() {
+        return "\nDepartment{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", maxSalary=" + maxSalary +
+                ", minSalary=" + minSalary +
+                '}';
     }
 }
